@@ -15,5 +15,4 @@ def main():
     except ValueError:
         print("Invalid input. Please input a valid age.")
 
-if __name__ == "__main__":
-    main()
+main()
