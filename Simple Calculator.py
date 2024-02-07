@@ -26,4 +26,3 @@ elif operation == "4":
     print("Dividing these numbers together give you: " + str(int(number1) / int(number2)))
 else:
     print("Please put a valid number")
-    
