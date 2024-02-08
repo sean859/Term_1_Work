@@ -61,7 +61,7 @@ def Output():
 
     # Formatted Output:
     def Formatted_Output():
-        print("Well " + Input_Prompt() + " Im quite shocked you like the color " + Favourite_Color() + " but you do you")
+        print("Well Jack Im quite shocked you like the color Green but you do you")
     Formatted_Output()
 
     # Repeated Output: 
@@ -86,7 +86,12 @@ def Variables():
     Variable_Swap()
 
     # Variable Concatenation: 
-
+    def Variable_Link():
+        string1 = 7
+        string2 = 3
+        print(str(str(string1) + str(string2)))
+    Variable_Link()
+    
     # Variable Initilization:
     def Variable_Initilization():
         actualage = input("Please enter your age")
@@ -124,3 +129,48 @@ def Operators():
         else:
             print("Please put a valid number") 
     Arithmetic_Operations()
+
+    # Comparison Operators:
+    def Comparison_Operators():
+        numero1 = input("Input a number: ")
+        numero2 = input("Input another number: ")
+        if numero1 == numero2:
+            print("These numbers are the same")
+        else:
+            print("These numbers are different")
+    Comparison_Operators()
+
+    # String Link
+    def String_Link():
+        print(str(str(85) + str(7)))
+    String_Link()
+
+def Control_Flow():
+
+    # If-Else Statement:
+    def If_Else_Statement():
+        votingage = int(input("Please enter your age: "))
+
+        if votingage <= 17:
+            print("You are not old enough to vote")
+        else:
+            print("You are old enough to vote")
+    If_Else_Statement()
+
+    # Nested If Statements:
+    def Nested_If_Statements():
+        randomnumber = int(input("Please enter a numbr: "))
+
+        if randomnumber < 0:
+            print("You have typed a negative number")
+        elif randomnumber == 0:
+            print("You have typed 0")
+        else:
+            print("You have typed a positive number")
+    Nested_If_Statements()
+
+    # Looping Control Flow
+    def Looping_Control_Flow():
+        for x in range(1,11):
+            print(x, end = " ")
+    Looping_Control_Flow()
