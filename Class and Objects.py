@@ -5,9 +5,6 @@ class Car:
         self.make = make
         self.model = model
         self.year = year
-    def __del__(self):
-        print("Deleted Everything")
-    
     def start_engine(self):
         print("The engine is starting")
 
