@@ -13,14 +13,16 @@ class Car:
     def start_engine(self): # Start the car engine
         print("The engine is starting")
 
-My_Car = Car("General Motors", "Chevrolet Corvette", 1985)
-Second_Car = Car("Nissan Motor Company", "Nissan Note", 2018)
-Third_Car = Car("Mazda", "Mazda Axela", 2015)
-My_Car.give_details()
-My_Car.start_engine()
-del My_Car
-Second_Car.give_details()
-Third_Car.give_details()
+def Car_Stuff():
+    My_Car = Car("General Motors", "Chevrolet Corvette", 1985)
+    Second_Car = Car("Nissan Motor Company", "Nissan Note", 2018)
+    Third_Car = Car("Mazda", "Mazda Axela", 2015)
+    My_Car.give_details()
+    My_Car.start_engine()
+    del My_Car
+    Second_Car.give_details()
+    Third_Car.give_details()
+Car_Stuff()
 
 class Person:
     def __init__(self, fname, lname, age):
@@ -32,6 +34,28 @@ class Person:
         print(class_name, "has been deleted")
     def print_details(self):
         print("Name:", self.fname, self.lname, " | Age:", self.age)
-Random_Person = Person("Sean", "Albertn", 18)
-Random_Person.print_details()
-del Random_Person
+
+def Person_Stuff():
+    Random_Person = Person("Sean", "Albertn", 18)
+    Random_Person.print_details()
+    del Random_Person
+Person_Stuff()
+
+class Task:
+    def __init__(self,description):
+        self.desc = description
+    def cleanup(self):
+        print("Task has been completed")
+        print("Removing....")
+    def __del__(self):
+            class_name = self.__class__.__name__
+            print(class_name, "was removed")
+    def Complete(self):
+        print("Your requirments for", self.desc, "have been met")
+
+def Task_Stuff():
+    Random_Task = Task("Program all Day 1 Exercises")
+    Random_Task.Complete()
+    Random_Task.cleanup()
+    del Random_Task
+Task_Stuff()
