@@ -59,3 +59,13 @@ def Task_Stuff():
     Random_Task.cleanup()
     del Random_Task
 Task_Stuff()
+
+class Rectagle:
+    def __init__(self, length = 1, width = 1):
+        self.length = length
+        self.width = width
+    def print_square(self):
+        print("Length =", self.length, " | Width =", self.width)
+
+Square = Rectagle("150cm", "124cm")
+Square.print_square()
