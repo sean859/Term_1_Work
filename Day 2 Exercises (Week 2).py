@@ -1,0 +1,2 @@
+# Singl Inheritence
+
