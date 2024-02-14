@@ -32,7 +32,7 @@ def Dictionary():
 Dictionary()
 
 # Set
-def Set():
+def Set(): 
     def Two_List_Common():
         list_1 =[1, 2, 3, 4, 5]
         list_2 =[1, 3, 5, 6, 7]
@@ -45,3 +45,22 @@ def Set():
     list_joined = list(set(list_1 + list_2))
     print(list_joined)
 Set()
+
+# Stack
+def Stack():
+    reverse_list =['This', 'sentence', 'should', 'be', 'backwards']
+    reverse_list.reverse()
+    print(reverse_list)
+    listdata =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    def add_item():
+        newnumber = input("Type new number: ")
+        listdata.append(newnumber)
+    def remove_item():
+        listdata.pop()
+    print(listdata)
+Stack()
+
+# Queue
+def Queue():
+    
+Queue()
