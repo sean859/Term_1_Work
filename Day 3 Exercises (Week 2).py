@@ -61,6 +61,4 @@ def Stack():
 Stack()
 
 # Queue
-def Queue():
 
-Queue()
