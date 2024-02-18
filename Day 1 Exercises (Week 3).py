@@ -36,7 +36,7 @@ print(bubble([765, 234, 512, 789, 321, 456, 876, 123, 678, 543,
 # Insertion Sort Algorithm
 
 # Explained:
-# The wat insertion sort works by taking a unsorted list and divide it into two lists 'sorted' and 'unsorted' by placing the first
+# The way insertion sort works by taking a unsorted list and divide it into two lists 'sorted' and 'unsorted' by placing the first
 # value into sorted once the algorithm starts its takes the value on the left most position in the unsorted list and moves it
 # into the sorted list then compares that same value to the value on its left in the sorted list and if that value is smaller 
 # it switchs positions with the value of left, this same value keeps getting compared with the value on the left and switching
