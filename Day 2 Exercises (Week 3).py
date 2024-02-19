@@ -7,7 +7,7 @@
 # PIP:
 
 # Pip is a package manager for Python packages allowing the user to install and manage additional packages or modules
-# that are not part of the standard python, with packages almost being a box with all the files you need for a 
+# that are not part of the standard python library, with packages almost being a box with all the files you need for a 
 # specific module, well modules are python code libraries you can include in your project
 
 # Venv 
