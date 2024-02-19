@@ -20,7 +20,7 @@
 
 # Explained:
 # Selection sort will take the first value's number and compare it every other values number on the right, till
-# it gets compared to a smaller number in which case the smaller number will become which number gets compared 
+# it gets compared to a smaller number in which case the smaller numb,,,er will become which number gets compared 
 # with others, once its compared all the numbers, it should have the minimum number, now the number gets put
 # into a sorted list on the left and now the others numbers are placed into a unsorted list at the end of
 # an interation, then at the start of the next interation it takes the first value's number in the unsorted
