@@ -34,3 +34,48 @@ def selection_sort(unsorted_list):
     for i in list_length:
         min_value = i
 
+        for j in range(i + 1, len(unsorted_list)):
+            if unsorted_list[j] < unsorted_list[min_value]:
+                min_value = j
+        
+        if min_value != i:
+            unsorted_list[min_value], unsorted_list[i], unsorted_list[i], unsorted_list[min_value]
+    
+    return unsorted_list
+print(selection_sort([15, 16, 18, 3, 6, 9]))
+
+# Merge Sort
+
+# Explained:
+# Merge sort is a conquer and divide algorithm by that it means that is breaks down a list given to it into smaller list called sub
+# list then breaks those sub lists into even more sub lists until the sublist contains only one value then to sort it merges 
+# two sub list together into one placing the lower number on the left and the higher on the right, then once all sub lists contain
+# two values it merges those list into lists of 4, again putting the lowest value on the left side and continues from lowest to highest
+# then it keeps repeating this process untill all sublists have merged into one sorted list with the numbers going from lowest to 
+# highest 
+
+# Code
+
+def merge(left, right):
+    result = []
+    i,j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i+=1
+        else:
+            result.append(right[j])
+            j+=1
+    result += left[i:]
+    result += right[j:]
+    return result
+def mergesort(lst):
+    if(len(lst) <= 1):
+        return lst
+    mid = int(len(lst)/2)
+    left = mergesort(lst[:mid])
+    right = mergesort(lst[mid:])
+    return merge(left, right)
+print(mergesort([67, 12, 89, 43, 56, 34, 78, 23, 91, 
+                 45, 18, 76, 39, 52, 87, 65, 29, 83, 
+                 16, 72, 47, 54, 31, 95, 68, 21, 84, 59, 13, 75]))
