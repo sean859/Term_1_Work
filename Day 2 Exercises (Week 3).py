@@ -79,3 +79,38 @@ def mergesort(lst):
 print(mergesort([67, 12, 89, 43, 56, 34, 78, 23, 91, 
                  45, 18, 76, 39, 52, 87, 65, 29, 83, 
                  16, 72, 47, 54, 31, 95, 68, 21, 84, 59, 13, 75]))
+
+# Quick Sort
+
+# Explained:
+# The quick sort method is done by taking an unsorted list and taking one the of the values from the list as a pivot point
+# that pivot point will get compared to every other value in the list, if the compared number is smaller then the pivot
+# it goes to the left side of the pivot point, and if its higher then the pivot it goes to the right, once all values
+# are split in either lower or higher then the pivot point those numbers will now need to be sorted and this is done by
+# turning one of those numbers and turning it into its own pivot point then that pivot gets compared to the other values
+# in the list placing smaller values on the left and higher values on the right, this algorithm keeps repeating this process
+# untill all the values are in either ascending or descending order (depending on on your choice), then it breaks and now
+# you have a sorted list of all your original values
+
+# Code
+
+def quick_sort(usl):
+    length = len(usl)
+    if length <= 1:
+        return usl
+    else:
+        pivot = usl.pop()
+
+    items_greater = []
+    items_lower = []
+
+    for item in usl:
+        if item > pivot:
+            items_greater.append(item)
+        else:
+            items_lower.append(item)
+
+    return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
+print(quick_sort([67, 12, 89, 43, 56, 34, 78, 23, 91, 
+                 45, 18, 76, 39, 52, 87, 65, 29, 83, 
+                 16, 72, 47, 54, 31, 95, 68, 21, 84, 59, 13, 75]))
