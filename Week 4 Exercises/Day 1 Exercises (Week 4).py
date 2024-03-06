@@ -1,5 +1,6 @@
 # This imports pandas and time into the project allowing you to utilize it to read the excel file, and track the time needed
 import time
+import pandas as pd
 
 # This line declares a variable called 'rugby_data' that holds all the information from the excel file
 rugby_data = pd.read_excel(r'C:\Users\seana\Desktop\rugby_players_data.xlsx')
