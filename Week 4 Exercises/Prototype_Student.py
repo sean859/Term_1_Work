@@ -9,7 +9,7 @@ class Student(Person):
         self.teacher = teacher
 
     def clone(self):
-        return copy.copy(self) # Or instead of copy.copy(self), you have copy.deepcopy(sefl) so that when the teacheg 'get_course' is moditify its dosen't change the display text for the 'studentclone'
+        return copy.copy(self) # Or instead of copy.copy(self), you have copy.deepcopy(sefl) so that when the teacheg 'get_course' is moditify its dosen't change the display text for the 'studentclone' 
     
     def display(self):
         print('Student was cloned:')
