@@ -1,1 +1,1 @@
-This repository will contain all my term 1 work for SD_C1 including the files with code on them as proof, plus this is also here just in case I end up deleting something and can recover it easier
+All Week 1 Exercises are found in the 'Week 1 Exercises' folder, all of Week 2 Exercises are found in the 'Week 2 Exercises' folder, all of Week 3 Exercises are found in the 'Week 3 Exercises' folder, and all of Week 4 Exercises are found in the 'Week 4 Exercises' folder,
