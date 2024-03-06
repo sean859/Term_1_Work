@@ -1,5 +1,4 @@
 # This imports pandas and time into the project allowing you to utilize it to read the excel file, and track the time needed
-import pandas as pd 
 import time
 
 # This line declares a variable called 'rugby_data' that holds all the information from the excel file
