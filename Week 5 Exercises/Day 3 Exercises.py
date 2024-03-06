@@ -1,17 +1,17 @@
 # Convert from C# to Python
 
-# public static int Square(int number)
-# {
-#     return number * number;
-# }
+"""public static int Square(int number)
+{
+     return number * number;
+}"""
 
 def Square(int):
     return int * int
 # --------------------------------------------------------------------
-# public static string ConcatenateStrings(string str1, string str2)
-# {
-#     return str1 + str2;
-# }
+"""public static string ConcatenateStrings(string str1, string str2)
+{
+    return str1 + str2;
+}"""
 
 def ConcatenateStrings(word1: str, word2: str):
     return word1 + word2
